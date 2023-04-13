@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Home</title>
+<link rel= "shortcut icon" href="Food-logo.JPG">
+<link rel="stylesheet" href="style.css">
+<script>
+
+ function showTable()
+{
+    if (document.getElementById("st").style.display === "none")
+    {
+       document.getElementById("description").style.display="none";
+        document.getElementById("st").style.display="block";
+        document.getElementById("game").value = "Foodify";
+    }
+    else
+    {
+      document.getElementById("description").style.display="block";
+        document.getElementById("st").style.display="none";
+        document.getElementById("game").value = "Game-ify";
+    }
+}
+</script>
+</head>
+<body>
+  <header class="pizza">
+    <div class="heading">
+      <h1>Pizza</h1>
+    </div>
+    <ul class = "nav-bar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Avocado.html">Avocado</a></li>
+      <li><a href="Pizza.html">Pizza</a></li>
+      <li><a href="Chicken.html">Chicken</a></li>
+    </ul>
+  </header>
+  <div id ="description">
+  <p>
+    <b>History of Pizza:</b>
+
+The origins of pizza can be traced back to ancient civilizations such as the Greeks and Romans who would eat flatbreads with toppings. However, modern pizza as we know it today is believed to have originated in Naples, Italy in the 18th century. <br>Initially, pizza was sold on the streets and was a cheap and quick meal for the poor. However, as its popularity grew, it became a beloved dish among all classes in Italy and eventually spread throughout the world.
+  </p>
+  <p>
+    <b>People Involved in Making Pizza:</b>
+
+There are many people involved in making pizza, from the farmers who grow the ingredients to the chefs who prepare the dough and toppings. In Italy, there is even a professional association called Associazione Verace Pizza Napoletana (AVPN) that certifies pizzerias that meet strict standards for making authentic Neapolitan pizza.
+  </p>
+  <p>
+    <b>Ingredients of Pizza:</b>
+
+The basic ingredients of pizza include dough, tomato sauce, cheese, and toppings. The dough is typically made from flour, yeast, water, and salt, and is kneaded and allowed to rise before being rolled out into a thin crust. <br>Tomato sauce is made from crushed tomatoes, garlic, and herbs, and is spread over the crust. Cheese is usually mozzarella or a blend of mozzarella and other cheeses, and toppings can range from meat and vegetables to fruits and even chocolate.
+  </p>
+  <p>
+  <b>Calories in Pizza:</b>
+
+The number of calories in pizza can vary depending on the size and toppings, but a standard slice of cheese pizza typically contains around 200-300 calories. Adding toppings like meat or extra cheese can increase the calorie count significantly.
+  </p>
+  <p>
+    <b>Fun Facts about Pizza:</b>
+The world's largest pizza was made in Rome in 2012 and measured over 13,000 square feet.
+The first pizzeria in the United States opened in New York City in 1905.
+In Japan, it is popular to top pizza with seafood like squid and shrimp.
+In Sweden, it is common to eat pizza with a side of banana slices.
+The most popular pizza topping in the United States is pepperoni.
+  </p>
+</div>
+
+ <!-- <div class = "table"> -->
+   <div class="food1">
+   <table class="stats" id = "st" style="display:none;">
+     <tr>
+       <th>Health</th>
+       <td>+&hearts;&hearts;&hearts;&hearts;</td>
+     </tr>
+     <tr>
+       <th>Calories</th>
+       <td>350</td>
+     </tr>
+     <tr>
+       <th>Protein</th>
+       <td>23g</td>
+     </tr>
+     <tr>
+       <th>Cholesterol</th>
+       <td>40mg</td>
+     </tr>
+     <tr>
+       <th>Sodium</th>
+       <td>936mg</td>
+     </tr>
+     <tr>
+       <th>Fat</th>
+       <td>80.4g</td>
+     </tr>
+     <tr>
+       <th>Carbohydrates</th>
+       <td>28g</td>
+     </tr>
+     <tr>
+       <th>Bonus: Turtle Power</th>
+       <td>+1990 Hp</td>
+     </tr>
+   </table>
+   <input id="game" type="button" value="Game-ify" onclick="showTable();">
+   </div>
+   <img class="food-image"src="pizza-pic.jpg">
+
+  <!-- </table> -->
+
+  </div>
+    <footer>
+      copyright &copy; cosc 1101 Jose Villarreal, Damion Olvera
+    </footer>
+</body>
+</html>

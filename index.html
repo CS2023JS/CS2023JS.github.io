@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Home</title>
+<link rel= "shortcut icon" href="Food-Logo.JPG">
+<link rel="stylesheet" href="style.css">
+<script>
+ function showContent(){
+   document.getElementById("welcome").style.display="none";
+   document.getElementById("content").style.display="block";
+ }
+</script>
+</head>
+<body>
+  <header>
+    <div class="heading">
+      <h1>Foodified</h1>
+    </div>
+    <ul class = "nav-bar">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="Avocado.html">Avocado</a></li>
+      <li><a href="Pizza.html">Pizza</a></li>
+      <li><a href="Chicken.html">Chicken</a></li>
+    </ul>
+  </header>
+  <div id="welcome">
+    <p>
+      <i>Hello everyone, welcome to this website where you learn all about food and then see that item be turned into a health item for a videogame. </i>
+    </p>
+  <form style="display:inline-block;">
+    <fieldset>
+      <legend>Sign Up</legend>
+    <table>
+      <tr>
+    <td><label>Name:</label></td>
+    <td><input type="text" name="uname"><br/></td>
+  </tr>
+  <tr>
+    <td><label>Username:</label></td>
+    <td><input type="text" name="name"></td>
+  </tr>
+  <tr>
+    <td><label>Password:</label></td>
+    <td><input type="password" name="pwd"></td>
+  </tr>
+  <tr>
+    <td><label>DOB:</label></td>
+    <td><input type= "date" name= "dob"></td>
+  </tr>
+  <tr>
+    <td colspan="2"><input type="button" value="submit" onclick="showContent();"></td>
+  </tr>
+
+</table>
+</fieldset>
+
+  </form>
+</div>
+<div id="content" >
+<i>  I got my sources of information from Chat GPT and wikipedia. This is the first website ive made so dont expect too much. <br> Its a pretty straightforward and simple website with basic functions and button presses. Enjoy.</i>
+
+</div>
+  <footer>
+      copyright &copy; cosc 1101 Jose Villarreal, Damion Olvera
+  </footer>
+</body>
+</html>

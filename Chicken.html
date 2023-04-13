@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Home</title>
+<link rel= "shortcut icon" href="Food-logo.JPG">
+<link rel="stylesheet" href="style.css">
+<script>
+
+ function showTable()
+{
+    if (document.getElementById("st").style.display === "none")
+    {
+       document.getElementById("description").style.display="none";
+        document.getElementById("st").style.display="block";
+        document.getElementById("game").value = "Foodify";
+    }
+    else
+    {
+      document.getElementById("description").style.display="block";
+        document.getElementById("st").style.display="none";
+        document.getElementById("game").value = "Game-ify";
+    }
+}
+</script>
+</head>
+<body>
+  <header class="chicken">
+    <div class="heading">
+      <h1>Chicken</h1>
+    </div>
+    <ul class = "nav-bar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Avocado.html">Avocado</a></li>
+      <li><a href="Pizza.html">Pizza</a></li>
+      <li><a href="Chicken.html">Chicken</a></li>
+    </ul>
+    </header>
+    <div id="description">
+    <p>
+      <b>History of Chicken:</b>
+
+The domestication of chickens is believed to have begun in Southeast Asia over 8,000 years ago. Since then, chickens have been raised for their meat and eggs all around the world. <br> In the United States, chicken became a popular food source in the 20th century due to its relatively low cost and versatility in cooking.
+    </p>
+    <p>
+      <b>Usage of Chicken in Cooking:</b>
+
+Chicken is a versatile meat that is used in a wide range of dishes around the world. It can be cooked in many different ways, including grilling, frying, baking, and roasting. Chicken is also a popular ingredient in soups, stews, salads, and sandwiches.
+    </p>
+    <p>
+      <b>Ingredients of Chicken:</b>
+
+Chicken is a good source of protein and contains a variety of vitamins and minerals. <br> A 100-gram serving of chicken breast contains around 165 calories, 31 grams of protein, and 3.6 grams of fat. Chicken is also a good source of B vitamins, phosphorus, and selenium.
+    </p>
+    <p>
+      <b>Fun Facts about Chicken:</b>
+
+Chickens are the most common bird on earth, with an estimated 23 billion chickens worldwide.
+The Guinness World Record for the largest chicken egg ever laid is held by a hen in England, who laid an egg weighing over 7 ounces.
+In some cultures, chicken feet are considered a delicacy and are used in soups and stews.
+Chicken can be used as a natural insect repellent due to the presence of a compound called diethyltoluamide (DEET) in their feathers.
+The chicken dance, a popular dance often performed at weddings and other celebrations, originated in Switzerland in the 1950s.
+</p>
+</div>
+<div class="food2">
+<table class="stats" id = "st" style="display:none;">
+  <tr>
+    <th>Health</th>
+    <td>+&hearts;&hearts;&hearts;</td>
+  </tr>
+  <tr>
+    <th>Calories</th>
+    <td>220</td>
+  </tr>
+  <tr>
+    <th>Protein</th>
+    <td>26g</td>
+  </tr>
+  <tr>
+    <th>Cholesterol</th>
+    <td>100mg</td>
+  </tr>
+  <tr>
+    <th>Sodium</th>
+    <td>65mg</td>
+  </tr>
+  <tr>
+    <th>Fat</th>
+    <td>6.2</td>
+  </tr>
+  <tr>
+    <th>Carbohydrates</th>
+    <td>none</td>
+  </tr>
+</table>
+<img class="food-image" src="chicken-pic.jpg">
+<input id="game" type="button" value="Game-ify" onclick="showTable();">
+</div>
+    <footer>
+      copyright &copy; cosc 1101 Jose Villarreal, Damion Olvera
+    </footer>
+</body>
+</html>

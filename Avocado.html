@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Home</title>
+<link rel= "shortcut icon" href="Food-logo.JPG">
+<link rel="stylesheet" href="style.css">
+<script>
+
+ function showTable()
+{
+    if (document.getElementById("st").style.display === "none")
+    {
+       document.getElementById("description").style.display="none";
+        document.getElementById("st").style.display="block";
+        document.getElementById("game").value = "Foodify";
+    }
+    else
+    {
+      document.getElementById("description").style.display="block";
+        document.getElementById("st").style.display="none";
+        document.getElementById("game").value = "Game-ify";
+    }
+}
+</script>
+</head>
+<body>
+  <header class="avocado">
+    <div class="heading">
+      <h1>Avocado</h1>
+    </div>
+    <ul class = "nav-bar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Avocado.html">Avocado</a></li>
+      <li><a href="Pizza.html">Pizza</a></li>
+      <li><a href="Chicken.html">Chicken</a></li>
+    </ul>
+  </header>
+  <div id="description">
+    <p>
+      <b>History of Avocado:</b>
+
+      Avocado is a fruit that is believed to have originated in Central America, specifically in the area that is now Mexico. It has been cultivated by the indigenous people of the region for thousands of years, and was eventually introduced to Europe by Spanish explorers in the 16th century. <br>Avocado became popular in the United States in the 20th century, and has since become a beloved ingredient in many dishes around the world.
+    </p>
+<p>
+<b>  Ingredients of Avocado:</b>
+
+Avocado is a nutrient-dense fruit that contains healthy fats, fiber, and a variety of vitamins and minerals. It is also low in carbohydrates and has a low glycemic index, making it a popular ingredient in many diets. <br>A 100-gram serving of avocado contains around 160 calories, 15 grams of healthy fats, 9 grams of carbohydrates, and 7 grams of fiber.
+</p>
+<p>
+  <b>Fun Facts about Avocado:</b>
+
+The word "avocado" comes from the Aztec word "ahuacatl," which means testicle.
+Avocado is sometimes referred to as "alligator pear" due to its rough, green skin.
+California produces the majority of avocados in the United States, with Mexico being the largest producer in the world.
+Avocado is not only used in food, but also in beauty products due to its moisturizing properties.
+In some countries, avocado is used as a sweet ingredient in desserts, such as avocado ice cream or smoothies.
+</p>
+</div>
+
+    <div class="food">
+    <table class="stats" id = "st" style="display:none;">
+      <tr>
+        <th>Health</th>
+        <td>+&hearts;</td>
+      </tr>
+      <tr>
+        <th>Calories</th>
+        <td>240</td>
+      </tr>
+      <tr>
+        <th>Protein</th>
+        <td>3g</td>
+      </tr>
+      <tr>
+        <th>Cholesterol</th>
+        <td>0%</td>
+      </tr>
+      <tr>
+        <th>Sodium</th>
+        <td>7mg</td>
+      </tr>
+      <tr>
+        <th>Fat</th>
+        <td>22g</td>
+      </tr>
+      <tr>
+        <th>Carbohydrates</th>
+        <td>8.5g</td>
+      </tr>
+    </table>
+    <img class="food-image" src="Avocado-pic.jpg">
+<input id="game" type="button" value="Game-ify" onclick="showTable();">
+</div>
+  <footer>
+    copyright &copy; cosc 1101 Jose Villarreal, Damion Olvera
+  </footer>
+</body>
+</html>
